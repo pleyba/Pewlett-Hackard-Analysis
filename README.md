@@ -13,30 +13,18 @@
    - Technique Leader, Assistant Engineer have 1,000 to 5,000 employees that are retirement age.
 
    * There are 1,940 current employees that are eligible to participate in the mentorship program.
-   * ss
-
    
 
+   
 3. Summary:
 
    - The number of retirement age employees is significantly high in several key roles as shown above in the results.
 
-   - There are a lot of employees eligible to participate in the mentorship program.
+   - There are a lot of employees eligible to participate in the mentorship program and can be utilized to train existing employees to fill the soon to be vacant roles. See the table 01 and query 01 below for information about which titles have available mentors.
 
      
 
-
-Another query here
-
-```sql
-SELECT COUNT(title), title
-INTO mentorship_count_titles
-FROM mentorship_eligibilty
-GROUP BY title
-ORDER BY title DESC;
-```
-
-Using the query below we can see where there might be resources to help bring current employees up to fill in some of the upcoming vacancies.
+Query 01
 
 ```sql
 SELECT COUNT(title), title
@@ -45,6 +33,10 @@ FROM mentorship_eligibilty
 GROUP BY title
 ORDER BY title DESC;
 ```
+
+Table 01
 
 ![](README.assets/Mentor_Count.PNG)
+
+
 
